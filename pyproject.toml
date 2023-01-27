@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pairwise-alignment"
+version = "0.1.0"
+description = ""
+authors = ["dwpeng <1732889554@qq.com>"]
+readme = "README.md"
+packages = [{include = "pairwise_alignment"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.24.1"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "http://mirrors.aliyun.com/pypi/simple"
+default = true
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.20.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
